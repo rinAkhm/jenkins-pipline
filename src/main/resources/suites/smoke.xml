@@ -1,0 +1,12 @@
+<suite name="Smoke suite">
+    <test name="smoke test">
+    <groups>
+        <run>
+            <include name="smoke"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="org.example.RunnerTest"/>
+    </classes>
+    </test>
+</suite>

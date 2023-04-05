@@ -1,0 +1,21 @@
+<suite name="tests">
+    <test name="all test" verbose="2">
+
+        <groups>
+            <define name="groups">
+                <include name="sanity"/>
+                <include name="smoke"/>
+                <include name="regress"/>
+            </define>
+            <define name="super_group">
+                <include name="groups"/>
+            </define>
+            <run>
+                <include name="super_group"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="org.example.*"/>
+        </packages>
+    </test>
+</suite>
